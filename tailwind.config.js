@@ -1,12 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  darkMode: 'class', // <--- ADD THIS LINE
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,jsx}", // Adjusted for JSX
+    "./index.html", // Adjust this path if your index file is elsewhere.
+    "./src/**/*.{js,jsx,ts,tsx}", // This covers all React component files.
   ],
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};
